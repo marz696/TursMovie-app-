@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { LoginScreen } from './components/LoginScreen';
-import { CustomerApp } from './components/CustomerApp';
-import { KasirApp } from './components/KasirApp';
+// import { CustomerApp } from './components/CustomerApp';
+// import { KasirApp } from './components/KasirApp';
 import { ChefApp } from './components/ChefApp';
 import { OperatorApp } from './components/OperatorApp';
 import IPhone16Frame from './components/iPhone16Frame';
@@ -75,18 +75,18 @@ function App() {
 
   // Route to appropriate app based on role
   switch (currentUser.role) {
-    case 'customer':
-      return (
-        <IPhone16Frame>
-          <CustomerApp user={currentUser} onLogout={handleLogout} />
-        </IPhone16Frame>
-      );
-    case 'kasir':
-      return (
-        <IPhone16Frame>
-          <KasirApp user={currentUser} onLogout={handleLogout} />
-        </IPhone16Frame>
-      );
+    // case 'customer':
+    //   return (
+    //     <IPhone16Frame>
+    //       <CustomerApp user={currentUser} onLogout={handleLogout} />
+    //     </IPhone16Frame>
+    //   );
+    // case 'kasir':
+    //   return (
+    //     <IPhone16Frame>
+    //       <KasirApp user={currentUser} onLogout={handleLogout} />
+    //     </IPhone16Frame>
+    //   );
     case 'chef':
       return (
         <IPhone16Frame>
